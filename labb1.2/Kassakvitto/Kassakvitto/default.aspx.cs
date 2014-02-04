@@ -11,7 +11,7 @@ namespace Kassakvitto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void sendButton_Click(object sender, EventArgs e)

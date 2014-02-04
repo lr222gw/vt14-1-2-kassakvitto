@@ -11,6 +11,7 @@
     <div>
         <asp:TextBox ID="moneybox" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server" ErrorMessage="Fältet får inte vara tomt" Display="Dynamic" ControlToValidate="moneybox" SetFocusOnError="True" Enabled="True"></asp:RequiredFieldValidator>
+        <asp:CompareValidator ID="CompareValidator" runat="server" ErrorMessage="Du måste använda siffror" Enabled="true" ControlToValidate="moneybox" Display="Dynamic" Operator="DataTypeCheck" SetFocusOnError="True" Type="Double"></asp:CompareValidator>
     </div>
     <div>
         <asp:Button ID="sendButton" runat="server" Text="Button" OnClick="sendButton_Click" />
@@ -19,5 +20,6 @@
         <asp:Label ID="resultRecipe" runat="server" Text=""></asp:Label>
         </p>
     </form>
+    <script type="text/javascript" src="Scripts/script.js"></script>
 </body>
 </html>
