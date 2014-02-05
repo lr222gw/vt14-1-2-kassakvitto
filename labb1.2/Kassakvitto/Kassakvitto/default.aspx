@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -15,7 +16,7 @@
         <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="Värdet moste vara större än 0" Enabled="true" ControlToValidate="moneybox" Display="Dynamic" Operator="GreaterThan" SetFocusOnError="True" Type="Double" ValueToCompare="0"></asp:CompareValidator>
     </div>
     <div>
-        <asp:Button ID="sendButton" runat="server" Text="Button" OnClick="sendButton_Click" />
+        <asp:Button ID="sendButton" runat="server" Text="Ta kvitto" OnClick="sendButton_Click" />
     </div>
         <p>
         <asp:Label ID="resultRecipe" runat="server" Text=""></asp:Label>

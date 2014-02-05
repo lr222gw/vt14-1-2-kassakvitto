@@ -62,11 +62,13 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="html\errorpage.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
     <Content Include="Scripts\script.js" />
+    <Content Include="style\style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

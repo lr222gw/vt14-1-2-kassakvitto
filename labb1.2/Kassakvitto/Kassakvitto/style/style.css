@@ -1,0 +1,14 @@
+﻿body {
+    background-color: whitesmoke;
+}
+
+#resultRecipe {
+background-color: gray;
+display: block;
+padding: 5px;
+border-radius: 5px;
+line-height: 25px;
+max-width: 185px;
+text-align: center;
+box-shadow: inset 0px 0px 10px 0px;
+}
