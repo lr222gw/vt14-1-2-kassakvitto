@@ -20,7 +20,11 @@ namespace Kassakvitto
                 var amount = double.Parse(moneybox.Text);
                 var theRecipe = new Model.Receipt(amount);
 
-                theRecipe.Calculate(amount); //exekverar Calculate metoden..
+                theRecipe.Calculate(amount); //exekverar Calculate metoden som räknar ut all data..
+
+                var recipeData = string.Format("Kvitto <br> Totalt: {0:c} <br>Rabattsats: {1:p0} <br>Rabatt: {2:c} <br>Att betala: {3:c}", theRecipe.Subtotal, theRecipe.DiscountRate, theRecipe.MoneyOff, theRecipe.Total);
+
+                resultRecipe.Text = recipeData;
 
                 
             }

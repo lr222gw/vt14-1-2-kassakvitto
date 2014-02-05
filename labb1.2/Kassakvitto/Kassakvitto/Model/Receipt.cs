@@ -48,19 +48,19 @@ namespace Kassakvitto.Model
         public void Calculate(double subtotal)
         {
 
-            if (subtotal <= 499 || subtotal > 0)
+            if (subtotal <= 499 && subtotal > 0)
             {
                 DiscountRate = 0.0;
             }
-            else if (subtotal <= 999 || subtotal > 499)
+            else if (subtotal <= 999 && subtotal > 499)
             {
                 DiscountRate = 0.05;
             }
-            else if (subtotal <= 4999 || subtotal > 999)
+            else if (subtotal <= 4999 && subtotal > 999)
             {
                 DiscountRate = 0.10;
             }
-            else if (subtotal > 5000)
+            else if (subtotal >= 5000)
             {
                 DiscountRate = 0.15;
             }
