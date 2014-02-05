@@ -47,33 +47,36 @@ namespace Kassakvitto.Model
         //Metoder
         public void Calculate(double subtotal)
         {
+            Subtotal = subtotal;
 
-            if (subtotal <= 499 && subtotal > 0)
+            if (Subtotal <= 499)
             {
                 DiscountRate = 0.0;
             }
-            else if (subtotal <= 999 && subtotal > 499)
+            else if (Subtotal <= 999)
             {
                 DiscountRate = 0.05;
             }
-            else if (subtotal <= 4999 && subtotal > 999)
+            else if (Subtotal <= 4999)
             {
                 DiscountRate = 0.10;
             }
-            else if (subtotal >= 5000)
+            else if (Subtotal >= 5000)
             {
                 DiscountRate = 0.15;
             }
 
-            MoneyOff = subtotal * DiscountRate;
+            MoneyOff = Subtotal * DiscountRate;
 
-            Total = subtotal - MoneyOff;
+            Total = Subtotal - MoneyOff;
             
         }
 
         public Receipt(double subtotal)
         {
-            Subtotal = subtotal;
+            //Subtotal = subtotal;
+
+            Calculate(subtotal); //exekverar Calculate metoden som räknar ut all data..
         }
 
 
