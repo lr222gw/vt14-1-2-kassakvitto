@@ -16,7 +16,17 @@ namespace Kassakvitto
 
         protected void sendButton_Click(object sender, EventArgs e)
         {
+            if(IsValid){
+                var amount = double.Parse(moneybox.Text);
+                var theRecipe = new Model.Receipt(amount);
+
+                theRecipe.Calculate(amount); //exekverar Calculate metoden..
+
+                
+            }
+
             
+
         }
     }
 }

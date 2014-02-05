@@ -12,6 +12,7 @@
         <asp:TextBox ID="moneybox" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server" ErrorMessage="Fältet får inte vara tomt" Display="Dynamic" ControlToValidate="moneybox" SetFocusOnError="True" Enabled="True"></asp:RequiredFieldValidator>
         <asp:CompareValidator ID="CompareValidator" runat="server" ErrorMessage="Du måste använda siffror" Enabled="true" ControlToValidate="moneybox" Display="Dynamic" Operator="DataTypeCheck" SetFocusOnError="True" Type="Double"></asp:CompareValidator>
+        <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="Värdet moste vara större än 0" Enabled="true" ControlToValidate="moneybox" Display="Dynamic" Operator="GreaterThan" SetFocusOnError="True" Type="Double" ValueToCompare="0"></asp:CompareValidator>
     </div>
     <div>
         <asp:Button ID="sendButton" runat="server" Text="Button" OnClick="sendButton_Click" />
